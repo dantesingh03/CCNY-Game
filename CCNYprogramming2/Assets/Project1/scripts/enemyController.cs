@@ -39,7 +39,7 @@ public class enemyController : MonoBehaviour
             //to get the vector between two objects, 
             Vector3 dirTowards = this.transform.position - other.gameObject.transform.position;
             //AddForceAtPosition will add a force originating from a location, in this case the player, to throw the enemy out
-            myBody.AddForceAtPosition( dirTowards*bounceMult , myPlayer.transform.position);
+            myBody.AddForceAtPosition(dirTowards * bounceMult, myPlayer.transform.position);
             Debug.Log("force");
         }
 
